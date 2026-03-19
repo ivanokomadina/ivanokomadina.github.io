@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRO Travel</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="images/logo.svg" type="image/x-icon" rel="icon" width="16px" height="16px">
+</head>
+<body class="pozadina">
+
+      <!-- NAVIGACIJA -->   
+
+      <nav class="navigacija navbar navbar-expand-lg fixed-top shadow p-2">
+        <div class="container">
+          <a class="navbar-brand px-3" href="index.html"><img src="images/logo.svg" width="100px" alt="Logo"></a>
+          <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="index.html">Početna</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="index.html#lokacije">Lokacije</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="rezervacija.html">Rezervacija</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="index.html#galerija">Galerija</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="index.html#o-nama">O nama</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link text-white" href="index.html#kontakt">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HERO SEKCIJA -->
+
+      <div id="myCarousel" class="carousel slide mb-6 h-100" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item h-100 active">
+            <img class="w-100 object-fit-cover hero-1" src="images/hero-1.jpg" alt="Hero 1" />
+            <div class="container h-100">
+              <div class="carousel-caption first d-flex align-items-center h-100 text-start">
+                <div class="d-flex flex-column">
+                  <h1 class="text-center text-md-start pb-3 display-2 lh-1 hero-1-tekst">
+                    Doživite ljepote i čari istarske obale!
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img class="w-100 object-fit-cover hero-2" src="images/hero-2.jpg" alt="Hero 2" />
+            <div class="container h-100">
+              <div class="carousel-caption d-flex text-start align-items-center h-100">
+                <div class="d-flex flex-column">
+                  <h1 class="pb-3 display-3 lh-2 text-center text-md-start hero-2-tekst">
+                    Posjetite znamenitosti grada Splita!
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img class="w-100 object-fit-cover hero-3" src="images/hero-3.jpg" alt="Hero 3" />
+            <div class="container h-100">
+              <div class="carousel-caption d-flex text-start align-items-center h-100">
+                <div class="d-flex flex-column">
+                  <h1 class="pb-3 display-3 lh-2 text-center text-md-start hero-3-tekst">
+                    Isprobajte tradicionalnu kuhinju na Korčuli!
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img class="w-100 object-fit-cover hero-4" src="images/hero-4.jpg" alt="Hero 4" />
+            <div class="container h-100">
+              <div class="carousel-caption d-flex text-start align-items-center h-100">
+                <div class="d-flex flex-column">
+                  <h1 class="pb-3 display-3 lh-2 text-center text-md-start hero-4-tekst">
+                    I još mnoštvo zanimljivosti obale Lijepe Naše!
+                  </h1>
+                  <div class="d-flex justify-content-center justify-content-md-start hero-cta gap-4 mt-2">
+                    <a class="btn btn-lg btn-outline-light px-5 rounded-0" href="rezervacija.html">Rezervacija</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Prethodni</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sljedeći</span>
+        </button>
+      </div>
+
+      <!-- LOKACIJE -->
+
+      <div class="container lokacije">
+        <div class="row my-5 align-items-center text-center text-md-start">
+          <div class="col-12">
+            <h1 class="pb-3" id="lokacije">Najpopularnije lokacije</h1>
+          </div>
+        </div>
+        <div class="row my-5 align-items-center">
+          <div class="d-block col-12 col-md-6 change-hover">
+            <picture class="show-img h-100">
+              <source media="(min-width:992px)" srcset="images/rovinj-1.jpg">
+              <img class="object-fit-cover w-100" src="images/rovinj-1.jpg">
+            </picture>
+            <picture class="d-none h-100">
+              <source media="(min-width:992px)" srcset="images/rovinj-2.jpg">
+              <img class="object-fit-cover w-100" src="images/rovinj-2.jpg">
+            </picture>
+          </div>
+          <div class="col-12 col-md-6 py-2 py-md-none ps-md-5 text-center text-md-start">
+            <h2 class="pb-3">Rovinj</h2>
+            <p class="d-none d-md-block">
+              Grad na zapadnoj obali Istre koji će vas očarati svojom mediteranskom klimom te zanimljivom poviješću. Posjetite
+              starogradsku jezgru, crkvu sv. Eufemije, Limski zaljev, šumu Zlatni rt te kušajte istarske tartufe u kombinaciji s 
+              ukusnim vinima.
+            </p>
+            <p class="d-none d-md-block"><br><a class="text-white text-decoration-none lokacije-link" href="https://www.rovinj-rovigno.hr/" target="blank">Saznajte više</a></p>
+          </div>
+        </div>
+        <div class="row my-5 align-items-center">
+          <div class="col-12 col-md-6 py-2 py-md-none ps-md-5 text-center text-md-start order-2 order-md-1">
+            <h2 class="pb-3">Split</h2>
+            <p class="d-none d-md-block">
+              Najveći grad u Dalmaciji i drugi najveći grad u Hrvatskoj čijim ulicama morate prošetati! Šetnja splitskom rivom, 
+              Dioklecijanova palača, park-šuma Marjan i stadion Poljud samo su neke od mjesta koje nudimo u ponudi.
+            </p>
+            <p class="d-none d-md-block"><br><a class="text-white text-decoration-none lokacije-link" href="https://split.hr/" target="blank">Saznajte više</a></p>
+          </div>
+          <div class="d-block col-12 col-md-6 change-hover order-1 order-md-2">
+            <picture class="show-img h-100">
+              <source media="(min-width:992px)" srcset="images/split-1.jpg">
+              <img class="object-fit-cover w-100" src="images/split-1.jpg">
+            </picture>
+            <picture class="d-none h-100">
+              <source media="(min-width:992px)" srcset="images/split-2.jpg">
+              <img class="object-fit-cover w-100" src="images/split-2.jpg">
+            </picture>
+          </div>
+        </div>
+        <div class="row my-5 align-items-center">
+          <div class="d-block col-12 col-md-6 change-hover">
+            <picture class="show-img h-100">
+              <source media="(min-width:992px)" srcset="images/korcula-1.jpg">
+              <img class="object-fit-cover w-100" src="images/korcula-1.jpg">
+            </picture>
+            <picture class="d-none h-100">
+              <source media="(min-width:992px)" srcset="images/korcula-2.jpg">
+              <img class="object-fit-cover w-100" src="images/korcula-2.jpg">
+            </picture>
+          </div>
+          <div class="col-12 col-md-6 py-2 py-md-none ps-md-5 text-center text-md-start">
+            <h2 class="pb-3">Korčula</h2>
+            <p class="d-none d-md-block">
+              Otok izgrađen na dolomitima i prekriven mediteranskom florom i šumom borova bio je jedna od grčkih kolonija. Nemojte propustiti
+              posjetiti Velu Spilu, katedralu sv. Marka, kuću Marka Pola, Glavicu sv. Antuna te tradicionalnu korčulansku hranu.
+            </p>
+            <p class="d-none d-md-block"><br><a class="text-white text-decoration-none lokacije-link" href="https://www.korcula.hr/" target="blank">Saznajte više</a></p>
+          </div>
+        </div>
+        <div class="row my-5 align-items-center">
+          <div class="col-12 col-md-6 py-2 py-md-none ps-md-5 text-center text-md-start order-2 order-md-1">
+            <h2 class="pb-3">NP Kornati</h2>
+            <p class="d-none d-md-block">
+              Nacionalnim parkom proglašeni 1980., Kornati su skupina otoka u srednjoj Dalmaciji. Mnoštvo otoka, otočića i 
+              hridi koje obiluju prirodnim i kulturnim posebnostima jednostavno ne smijete propustiti posjetiti.
+            </p>
+            <p class="d-none d-md-block"><br><a class="text-white text-decoration-none lokacije-link" href="https://www.np-kornati.hr/index.php?lang=hr" target="blank">Saznajte više</a></p>
+          </div>
+          <div class="d-block col-12 col-md-6 change-hover order-1 order-md-2">
+            <picture class="show-img h-100">
+              <source media="(min-width:992px)" srcset="images/kornati-1.jpg">
+              <img class="object-fit-cover w-100" src="images/kornati-1.jpg">
+            </picture>
+            <picture class="d-none h-100">
+              <source media="(min-width:992px)" srcset="images/kornati-2.jpg">
+              <img class="object-fit-cover w-100" src="images/kornati-2.jpg">
+            </picture>
+          </div>
+        </div>
+        <div class="row my-5 align-items-center">
+          <div class="col-12 py-2 py-md-5 text-center text-md-start">
+            <p class="d-block">
+              Za pregled svih lokacija koje nudimo u ponudi pogledajte naš promotivni <a class="text-white lokacije-link" href="index.html#galerija">videozapis</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEOGALERIJA -->
+
+      <div class="container videogalerija">
+        <div class="row my-5 align-items-center text-center text-md-start">
+          <div class="col-12">
+            <h1 class="pb-3" id="galerija">Videogalerija</h1>
+          </div>
+        </div>
+        <div class="row my-5 align-items-center">
+          <div class="col-12 py-md-5">
+            <video class="w-100 video-obrub" controls autoplay muted>
+              <source src="images/videogalerija.mp4" type="video/mp4">
+              Vaš internetski preglednik ne podržava videozapis.
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- O NAMA -->
+
+      <div class="container o-nama">
+        <div class="row my-5 align-items-center text-center text-md-start">
+          <div class="col-12">
+            <h1 class="pb-3" id="o-nama">O nama</h1>
+          </div>
+        </div>
+        <div class="row my-5 align-items-center text-start">
+          <div class="col-12 col-md-6">
+            <p class="pb-3">CRO Travel je hrvatska turistička agencija koja organizira putovanja u najpopularnije hrvatske gradove na 
+              obali, kao i na otoke. Osnovana je 2004. u Crikvenici, gdje joj je danas i sjedište. Dugogodišnjim radom s vrlo 
+              stručnim timom pruža nezaboravne uspomene i uzbudljive pustolovine za cijelu obitelj. Agencija nudi mnoštvo putovanja po 
+              vrlo povoljnim cijenama, što dokazuju iskustva brojnih putnika. Ponuda lokacija konstantno se mijenja, a ukoliko i Vi 
+              želite ostvariti brojne uspomene i posjetiti mjesta za kojima ste oduvijek žudjeli, na pravom ste mjestu jer CRO Travel je 
+              Vaš najdraži partner na putovanju!
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <iframe
+              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Trg Stjepana Radića, Crikvenica&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              width="100%" height="400" style="border: solid white" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- KONTAKT -->
+
+      <div class="container kontakt">
+        <div class="row my-5 align-items-center text-center text-md-start">
+          <div class="col-12">
+            <h1 class="pb-3" id="kontakt">Kontakt</h1>
+          </div>
+        </div>
+        <div class="row my-5 align-items-center text-center text-md-start">
+          <div class="col-12 col-md-6">
+            <p class="pb-3">CRO Travel<br>Trg Stjepana Radića 1<br>51260 Crikvenica</p>
+            <p class="pb-3 radno-vrijeme">Radno vrijeme</p>
+            <div class="d-flex gap-5 justify-content-center justify-content-md-start">
+              <div>
+                <p>
+                  Ponedjeljak - Petak<br />
+                  7:00-15:00
+                </p>
+              </div>
+              <div>
+                <p>
+                  Subota - Nedjelja<br />
+                  8:00-14:00
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+              <a href="tel:+385992994854"><img src="images/ikona-telefon-bez.png" alt="Telefon" width="200px" height="100px"></a>
+              <p class="pt-2 d-none d-md-block">Nazovite nas</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+              <a href="mailto:crotravel@gmail.com"><img src="images/ikona-mail-bez.png" alt="Mail" width="200px" height="100px"></a>
+              <p class="pt-2 d-none d-md-block">Pošaljite nam mail</p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5 align-items-center justify-content-center text-center text-md-start">
+          <div class="col-12 col-md-8">
+            <picture class="show-img h-100">
+              <source media="(min-width:992px)" srcset="images/grafika_ivano.jpg">
+              <img class="object-fit-cover w-100" src="images/grafika_ivano.jpg">
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+
+      <footer class="text-center mt-5 mb-0 p-2">
+        <p class="mb-0 text-white fs-6">CRO Travel 2024 | Sva prava pridržana.</p>
+      </footer>
+
+
+
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

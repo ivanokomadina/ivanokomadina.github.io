@@ -1,0 +1,124 @@
+.pozadina{
+  background-color: lightseagreen;
+}
+
+/* NAVIGACIJA */
+
+.navigacija{
+    background-color: lightseagreen;
+    font-family:'Poppins', sans-serif;
+}
+
+.nav-link:hover{
+  opacity: 50%;
+}
+
+/* HERO SEKCIJA */
+
+.carousel,.carousel-rezervacija{
+    height: 90vh !important;
+    font-family:'Poppins',sans-serif;
+}
+.carousel-caption{
+    padding-top: 8.25rem !important;
+}
+
+.hero-1,.hero-2,.hero-3,.hero-4,.hero-rezervacija{
+    height: 90vh;
+    filter: blur(5px);
+}
+
+.hero-1-tekst,.hero-2-tekst,.hero-3-tekst,.hero-4-tekst,.hero-rezervacija-tekst{
+    font-weight: bold;
+}
+
+/* LOKACIJE */
+
+.lokacije{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+picture.show-img {
+  display: block;
+}
+
+.change-hover:hover picture.d-none {
+  display: block !important;
+}
+
+.change-hover:hover picture.show-img {
+  display: none;
+}
+
+picture{
+  border-style: solid;
+  border-color: white;
+}
+
+.lokacije-link:hover{
+  opacity: 50%;
+}
+
+/* VIDEOGALERIJA */
+
+.videogalerija{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.video-obrub{
+  border-style: solid;
+  border-color: white;
+}
+
+/* O NAMA */
+
+.o-nama{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* KONTAKT */
+
+.kontakt{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.radno-vrijeme{
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+footer{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* REZERVACIJA */
+
+.row.row-gutter {
+  --bs-gutter-x: 2rem !important;
+}
+
+.rezervacija{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.pozadina-rezervacija{
+  background-color: lightseagreen;
+}
+
+.rezervacija-obrub-1{
+  border-style: solid;
+  border-color: white;
+  border-bottom: none;
+}
+
+.rezervacija-obrub-2{
+  border-style: solid;
+  border-color: white;
+  border-top: none;
+}
